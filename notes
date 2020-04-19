@@ -1,1 +1,39 @@
-jjl
+HTML :
+Hyper text markup language.
+It is not a programming language.
+It is used for a creating web-language.
+It describe structure of web page using markup.
+<!DOCTYPE html>
+<html>
+<head>
+<title> simple html document. </title>
+</head>
+<body>
+<h1> simple html document. </h1>
+</body>
+</html>
+
+
+HEADING, PARAGRAPH, LINK :
+HEADING TAG :
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+ 
+PARAGRAPH TAG :
+<p></p>
+
+LINK TAG :
+<a></a>
+<a href="https://www:google.com">Google</a>
+      href= it maens on which page we want to ladder.
+      google=(descripter) it is used for on which address we want to nevigate.
+      
+
+HTML ATTRIBUTES :
+Element(additional information).
+It is basically in pair(name & value).
+<html lang="ar">
