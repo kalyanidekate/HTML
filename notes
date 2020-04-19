@@ -12,10 +12,12 @@ It describe structure of web page using markup.
 <h1> simple html document. </h1>
 </body>
 </html>
+<!----head= element is a container for metadata. The <head> element is placed between the <html> tag and the <body> tag
 
 
 HEADING, PARAGRAPH, LINK :
 HEADING TAG :
+Heading are defined with <h1> to <h6> tags.
 <h1></h1>
 <h2></h2>
 <h3></h3>
@@ -24,16 +26,49 @@ HEADING TAG :
 <h6></h6>
  
 PARAGRAPH TAG :
+<p> is used for paragraph.
 <p></p>
 
 LINK TAG :
+HTML links are hyperlinks.
 <a></a>
-<a href="https://www:google.com">Google</a>
-      href= it maens on which page we want to ladder.
-      google=(descripter) it is used for on which address we want to nevigate.
+Syntax:- <a href="url">descripter</a>
+         <!----href= it maens on which page we want to ladder.---->
+         <!----descripter= it is used for on which address we want to nevigate.----->
+ex.:- <a href="https://www.google.com"> Google </a>
       
 
 HTML ATTRIBUTES :
 Element(additional information).
 It is basically in pair(name & value).
-<html lang="ar">
+href= link are defined with <a> tag.
+src= image are defined with <img> tag.
+    ex.:- <img src= "img_girl.jpg">
+width & height
+
+    ex.:- <img src="img_girl.jpg" width="200" height="300">
+
+
+LINE BREAK :
+The HTML <br> element defines a line break.
+<p>______<br>______</p>.
+
+
+PRE TAG :
+It is preformatted text.
+Width of font is fixed.
+<pre></pre>.
+
+
+
+STYLE ATTRIBUTES :
+<tag_name style= "property:value;">
+ex.:- <p style= "color:green; font-size:300%; color:red;"> i am green </p>.
+
+
+TEXT ALIGNMENT :
+The text-align property specifies the horizontal alignment of text in an element.
+<h1 style= "text-align:center;> centered heading </h1>
+       
+       
+
