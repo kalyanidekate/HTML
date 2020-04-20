@@ -1,4 +1,3 @@
-
 HTML :
 Hyper text markup language.
 It is not a programming language.
@@ -27,15 +26,26 @@ Heading are defined with <h1> to <h6> tags.
 <h6></h6>
  
 PARAGRAPH TAG :
-<p> is used for paragraph.
-<p></p>
+<p> is used for paragraph.                                        <!-----<p></p>------>
+Syntax:- <!DOCTYPE html>
+         <html>
+         <body>
+         <p>______</p>
+         </body>
+         </html>
 
-LINK TAG :
-HTML links are hyperlinks.
-<a></a>
-Syntax:- <a href="url">descripter</a>
-         <!----href= it maens on which page we want to ladder.---->
-         <!----descripter= it is used for on which address we want to nevigate.----->
+
+LINK :
+HTML links are hyperlinks.                                        <!-----<a></a>------>
+<a> is used for link.
+Syntax:- <!DOCTYPE html>
+         <html>
+         <body>
+         <p><a href="url">descripter</a></p>
+         </body>        
+         </html>
+<!----href= it maens on which page we want to ladder.---->
+<!----descripter= it is used for on which address we want to nevigate.----->
 ex.:- <a href="https://www.google.com"> Google </a>
       
 
@@ -46,20 +56,30 @@ href= link are defined with <a> tag.
 src= image are defined with <img> tag.
     ex.:- <img src= "img_girl.jpg">
 width & height
-
     ex.:- <img src="img_girl.jpg" width="200" height="300">
+alt= alternative text
 
 
 LINE BREAK :
 The HTML <br> element defines a line break.
-<p>______<br>______</p>.
+Syntax:- <!DOCTYPE html>
+         <html>
+         <body>
+         <p>______<br>______</p>.
+         </body>
+         </html>
 
 
 PRE TAG :
-It is preformatted text.
+It is preformatted text.                                          <!-----<pre></pre>.----->
 Width of font is fixed.
-<pre></pre>.
-
+<!DOCTYPE html>
+<html>
+<body>
+<h1>________</h1>
+<pre>______</pre>
+</body>
+</html>                    
 
 
 STYLE ATTRIBUTES :
@@ -72,4 +92,220 @@ The text-align property specifies the horizontal alignment of text in an element
 <h1 style= "text-align:center;> centered heading </h1>
        
        
+TEXT FORMATTING :
+<b>= bold text
+<strong>= important text
+<i>= italic text
+<em>= emphasized text
+<mark>= marked text
+<small>= small text
+<del>= deleted text
+<ins>= inserted text
+<sub>= subscript text
+<sup>= superscript text
+
+
+QUOTATION ADDRESS :
+<q> element defines a short quotation.
+<html>
+<body>
+<p></p>
+<p>_______:<q>________</q></p>
+</body>
+</html>
+
+
+BLOCKQUOTE :
+HTML <blockquote> element defines a section that is quoted from another source.
+Syntax:- <!DOCTYPE html>
+         <html>
+         <body>
+         <p>_______</p>
+         <blockquote cite="http://www.worldwildlife.org/who/index.html"></blockquote>
+         </body>
+         </html>
+Browser support: opera, mozela firefox, crome, explorer.
+
+
+ABBREVIATIONS :
+The HTML <abbr> tag is used for indicating an abbreviation like etc., pvt., ltd.
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         </head>
+         <body>
+         <p>_____<abbr title = "Private">pvt.</abbr></p> 
+         </body>
+         </html>
+
+
+ADDRESS :
+The <address> element identifies contact information relevant to the current site, page, document, section, or article.
+The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+Syntax:- <!DOCTYPE html>
+         <html>
+         <body>
+         <h1>_________</h1>
+         <address> Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br> 
+         Visit us at:<br>
+         Example.com<br>
+         Box 564, Disneyland<br>
+         USA </address>
+         </body>
+         </html>
+
+
+BDO TAG :
+The <bdo> element is used override the default directionality of text. 
+It is used to display characters from languages that are read from right-to-left.
+Syntax:- <!DOCTYPE html>
+         <html>
+         <body>
+         <p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p>  
+         </body>
+         </html>
+
+
+COMMENT :
+Syntax:- <!-----write your comment----->
+
+
+COLOR :
+HTML colors are specified using predefined color names.
+It can also be specified using RGB values, HEX values, HSL values, RGBA values & HSLA values.
+BACKGROUND :
+Syntax:- <!DOCTYPE html>
+         <html>
+         <body>
+         <h1 style="background-color:color_name;">color_name</h1>
+         </body>
+         </html>
+TEXT :
+Syntax:-<!DOCTYPE html>
+         <html>
+         <body>
+         <h1 style="color:color_name;"> Text </h1>
+         </body>
+         </html>
+BORDER :
+Syntax:- <!DOCTYPE html>
+         <html>
+         <body>
+         <h1 style="border:2px color_name> Text </h1>
+         </body>
+         </html>
+ 
+ 
+CSS (STYLE TAG) :
+Cascading style sheet.
+CSS can be added to HTML elements in 3 ways:
+     1. Incline
+     2. Internal
+     3. External
+INCLINE :
+It is used to apply a unique style to a single HTML element.
+An inline CSS uses the style attribute of an HTML element.
+Syntax:- <!DOCTYPE html>
+         <html> 
+         <body>
+         <h1 style="color:color_name;">This is a Blue Heading</h1>
+         </body>
+         </html>
+INTERNAL :
+An internal CSS is defined in the <head> section within a <style> element.
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         <style>
+         body{background-color: color_name;}         <!------we can style body,heading, paragraph,etc. in style tag.----->
+         </style>
+         </head>
+         <body>
+         <h1> Text </h1>
+         <p> Text </p>                 <!------if you want to color the text then in style tag mention the h1{color:color_name;}    p{color;color_name;}----->
+         </body>
+         </html>
+EXTERNAL :
+With the help of the external style sheet you can change the look of an entire web site by changing one file.
+To use external style sheet add a link to it in the <head> section of the HTML page.
+
+
+CSS BORDER :
+A border around the HTML element.
+The type of border is: dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden.
+Syntax:- <!DOCTYPE html>
+         <html> 
+         <head>
+         <style>
+         p.name_of_border {border-style: name_of_border;}
+         </style>
+         </head>
+         <body>
+         <p class="name_o_boredr"> Text </p>
+         </body>
+         </html>
+         
+         
+CSS PADDING :
+It is the space between the text and the border.
+For specifying the padding for each side of an element:
+padding-top
+padding-right
+padding-bottom
+padding-left
+All the padding properties can have the following values:
+length - specifies a padding in px, pt, cm, etc.
+% - specifies a padding in % of the width of the containing element
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         <style>
+         div {
+         padding: 40px; border: 2px solid #4CAF50;
+         }
+         </style>
+         </head>
+         <body>
+         <div> Text </div>
+         </body>
+         </html>
+         
+         
+CSS MARGIN :-
+It is a margin (space) around the element, outside the border.
+For specifying the margin for each side of an element:
+margin-top
+margin-right
+margin-bottom
+margin-left
+All the margin properties can have the following values:
+auto - the browser calculates the margin
+length - specifies a margin in px, pt, cm, etc.
+% - specifies a margin in % of the width of the containing element
+Syntax:- <!DOCTYPE html>
+         <html>
+         <head>
+         <style>
+         div {
+         border: 2px color_name;
+         margin-top: 150px;
+         margin-bottom: 200px;
+         margin-right: 250px;
+         margin-left: 90px;
+         background-color: color_name;
+         }
+         </style>
+         </head>
+         <body>
+         <h2> Text </h2>
+         <div> Text </div>
+         </body>
+         </html>
+         
+         
+ID ATTRIBUTES :
+
+
+
+
 
