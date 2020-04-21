@@ -37,6 +37,7 @@ Syntax:- <!DOCTYPE html>
 
 LINK :
 HTML links are hyperlinks.                                        <!-----<a></a>------>
+when we click on link and jump to another ddocument.
 <a> is used for link.
 Syntax:- <!DOCTYPE html>
          <html>
@@ -47,6 +48,55 @@ Syntax:- <!DOCTYPE html>
 <!----href= it maens on which page we want to ladder.---->
 <!----descripter= it is used for on which address we want to nevigate.----->
 ex.:- <a href="https://www.google.com"> Google </a>
+
+
+LOCAL LINK :
+A local link is specified with a relative URL (without https://www....).
+ex.:- <a href="html_images.abc"> Images </a>
+
+
+THE TARGET ATTRIBUTE :
+It specifies where to open the linked document.
+The target attribute can have one of the following values:
+   1. _blank - Open the linked document in a new window or tab
+   2. _self - Open the linked document in the same window/tab as it was clicked (this is default)
+   3. _parent - Open the linked document in the parent frame
+   4. _top - Open the linked document in the full body of the window
+   5. framename - Open the linked document in a named frame
+ex.:- <a href="https://www.google.com" target="_blank"> Google </a> 
+ 
+
+IMAGE AS A LINK :
+ex.:- <a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;"></a>
+  
+  
+BUTTON AS A LINK :
+ex.:- <button onclick="document.location = 'default.asp'">HTML Tutorial</button>
+
+
+LINK TITLE :
+The title attribute specifies extra information about an element. 
+The information is most often shown as a tooltip text when the mouse moves over the element.
+ex.:- <a href="https://www.google.com" title="Go to google"> Google </a>
+
+
+LINK COLOR :
+There are three types:
+    1. An unvisited link is underlined & blue.
+    2. An visited link underlined & purple.
+    3. An active link is underlined & red.
+    
+    
+LINK BOOKMARK :
+Bookmark can be useful if a webpage is very long.
+To create a bookmark, first create the bookmark then add a link in it.
+When the link is clicked, the page will scroll down or upto the location with the bookmark.
+Create a bookmark with the 'id' attribute.
+    
+
+
+
       
 
 HTML ATTRIBUTES :
@@ -304,8 +354,25 @@ Syntax:- <!DOCTYPE html>
          
          
 ID ATTRIBUTES :
+It specifies a unique id for HTML element(the value must be unique).
+It is used to style in a style sheet, and by JavaScript (via the HTML DOM) to manipulate the element with the specific id.
+Specifies a unique id for the element. Naming rules:
+Must contain at least one character
+Must not contain any space characters
+Syntax:- <element id="id">
 
 
+CLASS ATTRIBUTE :
+Specifies one or more class names for an element. 
+To specify multiple classes, separate the class names with a space, e.g. <span class="left important">. 
+This allows you to combine several CSS classes for one HTML element.
+Naming rules:
+Must begin with a letter A-Z or a-z
+Can be followed by: letters (A-Z a-z), digits (0-9), hyphens ("-"), and underscores ("_")
+The class attribute specifies one or more classnames for an element.
+The class attribute is mostly used to point to a class in a style sheet. 
+It can also be used by a JavaScript to make changes to HTML elements with a specified class.
+Syntax:- <element class="classname">
 
 
-
+EXTERNAL REFERENCE :
